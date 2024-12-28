@@ -93,20 +93,21 @@ img{
 
 @media (max-width:500px)
 {
+    body{
+        height: 100vh;
+    }
     .container{
         width: 70%;
-        height: 90vh;
+        height: 80vh;
         position: relative;
     }
 
     .choices{
         height: 20vh;
+        gap: 10px;
     }
-    #restart{
-        position: fixed;
-        bottom: 50px;
-    }
-    #result{
-        position: fixed;
+    img{
+        width: 17vw;
+        height: 17vw;
     }
 }
