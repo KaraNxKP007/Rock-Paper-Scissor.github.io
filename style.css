@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    background-image: linear-gradient(135deg,rgb(22, 211, 202),purple);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    width: 60%;
+    height: 90vh;
+    text-align: center;
+    margin-top: 5vh;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(231, 227, 227, 0.2), 0 6px 20px 0 rgba(224, 220, 220, 0.19);
+    border-radius: 10px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+img{
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+}
+.choices{
+    background-image: linear-gradient(135deg,green,yellow);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+.cb{
+    border: none;
+    display: flex;
+    outline: none;
+    border: 5px solid;
+    border-radius: 50%;
+}
+.playeroption,.score{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: cadetblue;
+    font-size: 17px;
+    gap: 3px;
+
+}
+#restart{
+    position:absolute;
+    bottom:-15%;
+    width: 50%;
+    left: 25%;
+    border: none;
+    padding: 10px;
+    background-color: rgb(58, 156, 231);
+    border-radius: 10px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.5s box-shadow 0.5s;
+}
+#restart:hover{
+    background-color: rgb(34, 122, 189);
+}
+#restart:active{
+    transform: scale(99%);
+    box-shadow: 2px 2px #666;
+}
+#result{
+    position: absolute;
+    bottom:5%;
+}
+
+@media (max-width:500px)
+{
+    .container{
+        width: 70%;
+        height: 90vh;
+        position: relative;
+    }
+
+    .choices{
+        height: 20vh;
+    }
+    #restart{
+        position: fixed;
+        bottom: 50px;
+    }
+    #result{
+        position: fixed;
+    }
+}
