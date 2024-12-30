@@ -34,8 +34,6 @@ const winning=(event)=>{
         
                     computerchoose.textContent='Computer: Rock'
                     result.textContent='It\'s a tie'
-                    playerpoints++
-                    computerpoints++
                     playerscore.innerHTML=`Player Points: ${playerpoints}`
                     computerscore.innerHTML=`Computer Points: ${computerpoints}`
                 }
@@ -66,8 +64,6 @@ const winning=(event)=>{
                 } else if (computer_choose === 'paper') {
                     computerchoose.textContent = 'Computer: Paper';
                     result.textContent = "It's a tie";
-                    playerpoints++;
-                    computerpoints++;
                 } else if (computer_choose === 'scissor') {
                     computerchoose.textContent = 'Computer: Scissor';
                     result.textContent = 'Computer Wins';
@@ -90,8 +86,6 @@ const winning=(event)=>{
                 } else if (computer_choose === 'scissor') {
                     computerchoose.textContent = 'Computer: Scissor';
                     result.textContent = "It's a tie";
-                    playerpoints++;
-                    computerpoints++;
                 }
                 playerscore.innerHTML = `Player Points: ${playerpoints}`;
                 computerscore.innerHTML = `Computer Points: ${computerpoints}`;
@@ -101,7 +95,7 @@ const winning=(event)=>{
 
             if(currentturn===totalturn)
             {
-                result.textContent+=" Game Over!!!"
+                result.textContent="Game Over!!!"
             }
             
     }
